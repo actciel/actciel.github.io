@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1초 AI스캐너 개인정보처리방침</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.7;
+    color: #222;
+    background: #fff;
+  }
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .effective-date {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 19px;
+    color: #2563eb;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #eef2ff;
+    padding-bottom: 8px;
+  }
+  p {
+    font-size: 15px;
+    margin: 12px 0;
+  }
+  ul {
+    margin: 8px 0;
+    padding-left: 22px;
+  }
+  li {
+    font-size: 15px;
+    margin: 6px 0;
+  }
+  a {
+    color: #2563eb;
+  }
+  .highlight-box {
+    background: #eef2ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .highlight-box p {
+    margin: 6px 0;
+  }
+  .contact-box {
+    background: #f8f9fb;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 12px;
+  }
+  .contact-box li {
+    list-style: none;
+    margin-left: -22px;
+  }
+</style>
+</head>
+<body>
+
+<h1>1초 AI스캐너 개인정보처리방침</h1>
+<p class="effective-date">시행일자: 2026년 7월 12일</p>
+
+<p>주식회사 리뷰튜브(이하 "개발자")는 "1초 AI스캐너"(이하 "앱") 이용자의 개인정보를 소중하게 생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 개인정보처리방침은 앱이 어떤 정보를 다루는지, 그리고 이용자의 권리가 무엇인지 안내합니다.</p>
+
+<h2>1. 수집하는 정보와 수집하지 않는 정보</h2>
+<p>앱은 별도의 회원가입, 로그인을 요구하지 않습니다. 다만 이용자를 구분하고 서비스 이용량을 관리하기 위해 Firebase의 "익명 로그인" 기능으로 임의의 식별 번호를 기기에 자동으로 발급합니다. 이 번호는 이름·이메일 등 실제 개인정보와 연결되지 않으며, 그 자체로는 특정 개인을 알아볼 수 없습니다.</p>
+<ul>
+  <li>수집하지 않음: 이름, 전화번호, 이메일, 닉네임, 위치 정보, 결제 정보</li>
+  <li>자동 발급됨: 익명 식별 번호(기기·설치 단위, 개인 식별 불가)</li>
+  <li>자동 수집될 수 있음: 광고 식별자(Advertising ID) 등 기기 식별 정보 — 아래 5항 참고</li>
+</ul>
+
+<h2>2. 카메라 권한 및 스캔한 문서 이미지 — AI 분석을 위한 전송</h2>
+<p>앱의 핵심 기능인 문서 스캔·AI 분석을 위해 카메라 접근 권한을 요청합니다.</p>
+<div class="highlight-box">
+  <p><strong>이 앱은 이전 앱("1초 스캐너")과 달리, 촬영하거나 갤러리에서 선택한 문서 이미지를 이용자가 요청한 기능(3줄 요약, 번역, 표를 엑셀로, 쉬운 말로 설명)을 처리하기 위해 Google의 AI 서버(Gemini, Firebase AI Logic 경유)로 전송합니다.</strong></p>
+  <p>전송된 이미지는 AI가 응답을 생성하는 순간에만 일시적으로 이용되며, <strong>개발자의 서버에는 전송되지도 저장되지도 않습니다.</strong> AI가 만든 응답(요약문·번역문·표 데이터 등) 역시 개발자의 서버에 저장되지 않고 이용자의 화면에만 표시됩니다.</p>
+</div>
+<p>이미지와 AI 응답은 이용자가 새 문서를 처리하거나 앱을 종료하면 기기 메모리에서 사라지며, 별도로 갤러리 등에 저장되지 않습니다.</p>
+<p>이 앱은 유료(비용 청구) 등급으로 연결된 Google Cloud 프로젝트를 통해 Gemini API를 이용합니다. Google의 유료 서비스 약관에 따르면, 이 등급에서는 <strong>제출된 이미지·프롬프트·응답이 Google 자체 제품 개선이나 AI 모델 학습에 이용되지 않으며</strong>, 부정 이용 방지 등 안전 목적으로만 일정 기간 임시 보관됩니다. Google의 AI 데이터 처리 방식은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a> 및 <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API 추가 이용약관</a>(유료 서비스 항목)에서 확인하실 수 있습니다.</p>
+
+<h2>3. 서버에 기록되는 이용 정보 (사용횟수·피드백)</h2>
+<p>앱은 서비스 운영을 위해 아래의 숫자·범주 정보만 개발자의 서버(Google Firebase)에 기록합니다. <strong>문서 내용이나 AI 응답 내용은 어떤 경우에도 포함되지 않습니다.</strong></p>
+<ul>
+  <li><strong>하루 사용 가능 횟수 관리</strong>: 1항의 익명 식별 번호, 오늘 사용한 횟수, 리워드 광고 시청으로 충전된 횟수, 기준 날짜</li>
+  <li><strong>기능 만족도 피드백(👍/👎)</strong>: 평가 대상 기능(요약/번역/표변환/쉬운설명), 좋아요·싫어요 여부, 이용자 기기의 언어 설정, 클릭 시각, 1항의 익명 식별 번호</li>
+</ul>
+<p>이 정보는 실명이 아닌 익명 식별 번호로만 관리되며, 서비스 이용량 관리와 기능 개선(예: 특정 언어권에서 번역 품질에 대한 불만이 많은지 파악) 목적으로만 이용됩니다.</p>
+
+<h2>4. 정보의 이용 목적</h2>
+<p>수집되는 정보는 다음의 목적으로만 이용됩니다.</p>
+<ul>
+  <li>이용자가 요청한 문서 분석(요약·번역·표 추출·쉬운 설명) 결과 제공</li>
+  <li>하루 사용 가능 횟수 및 광고 시청 보상 관리</li>
+  <li>기능별 만족도 파악 및 서비스 개선</li>
+  <li>광고 게재 및 맞춤형 광고 제공</li>
+  <li>앱 서비스의 안정적 운영 및 오류 확인</li>
+</ul>
+
+<h2>5. 광고 및 AI 서비스 제공업체 (제3자 제공)</h2>
+<p>앱은 Google이 제공하는 아래 서비스를 이용합니다.</p>
+<ul>
+  <li><strong>Google AdMob</strong>: 배너·리워드 광고 게재. 광고 식별자, 기기 정보 등이 Google에 자동 전달될 수 있음</li>
+  <li><strong>Firebase AI Logic (Gemini)</strong>: 이용자가 요청한 문서 이미지의 AI 분석 처리 (위 2항 참고)</li>
+  <li><strong>Firebase Analytics</strong>: 앱 이용 통계 분석(개인 식별 정보 미포함)</li>
+</ul>
+<p>Google은 이를 자체 개인정보처리방침에 따라 처리합니다. 자세한 내용은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>에서 확인하실 수 있습니다. 이용자는 기기의 설정 메뉴에서 광고 식별자 재설정 또는 맞춤형 광고 수신을 거부할 수 있습니다.</p>
+
+<h2>6. 정보의 보유 및 이용 기간</h2>
+<p>앱은 별도의 회원 정보를 보유하지 않습니다. 문서 이미지와 AI 응답은 처리 즉시 폐기되어 저장되지 않습니다(위 2항 참고). 사용횟수·피드백 기록(3항)은 서비스 운영 기간 동안 익명 식별 번호로 보관되며, 앱을 삭제해도 서버에 남아있던 과거 기록 자체가 개인을 특정하지는 않습니다. 광고 식별자 등 자동 수집 정보는 Google의 정책에 따라 처리됩니다.</p>
+
+<h2>7. 이용자의 권리</h2>
+<ul>
+  <li>기기 설정에서 카메라 권한 철회 (단, 이 경우 스캔 기능 이용이 제한됩니다)</li>
+  <li>기기 설정에서 광고 식별자 재설정 또는 맞춤형 광고 수신 거부</li>
+  <li>앱 삭제를 통한 기기 내 데이터 삭제 (문서 이미지·AI 응답은 애초에 기기에 저장되지 않음)</li>
+  <li>서버에 기록된 사용횟수·피드백 정보 삭제 요청 — 아래 10항 문의처로 연락</li>
+</ul>
+
+<h2>8. 만 14세 미만 아동의 개인정보</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동으로부터 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+<h2>9. 개인정보처리방침의 변경</h2>
+<p>본 방침은 관련 법령, 정책 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 앱 내 공지 또는 본 페이지 업데이트를 통해 고지합니다.</p>
+
+<h2>10. 문의처</h2>
+<p>본 방침 및 앱의 개인정보 처리와 관련하여 문의사항이 있으시면 아래로 연락해 주시기 바랍니다.</p>
+<div class="contact-box">
+  <ul>
+    <li>상호: 주식회사 리뷰튜브</li>
+    <li>이메일: <a href="mailto:admin@reviewtube.co.kr">admin@reviewtube.co.kr</a></li>
+  </ul>
+</div>
+
+</body></html>
